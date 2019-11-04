@@ -1,8 +1,11 @@
 //var userinput = null;
 
+function hide() {
+    document.getElementById("stone").style.display = "none";
+}
 
 function rock() {
-   
+    document.getElementById("stone").style.display = "block";
     var computerinput = (Math.floor(Math.random()* 3))
     if (computerinput == 0) {
         var para = document.getElementById('winner');
@@ -58,5 +61,6 @@ function playagain() {
     document.getElementById("rock").disabled = false;
     document.getElementById("paper").disabled = false;
     document.getElementById("scissors").disabled = false;
+    document.getElementById("stone").style.display = "none";
 
 }
