@@ -24,8 +24,11 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     
+
+  }
+  .buttonpaper:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
   .buttonscissors {
     background-color: rgb(12, 150, 155); /* Green */
@@ -37,6 +40,9 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
+    
+  }
+  .buttonscissors:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
   .buttonplayagain {
@@ -49,5 +55,8 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 50%;
+    
+  }
+  .buttonplayagain:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
