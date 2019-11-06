@@ -56,12 +56,12 @@ function paper() {
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You Lose!';
-        Gamehistory.push('Compoter wins')
+        Gamehistory.push('Computer wins')
     }
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
-    document.getElementById("Game_history").innerHTML=Gamehistory.join('\n')
+    document.getElementById("Game_history").innerHTML=Gamehistory.join('<br />')
 }
 function scissors() {
     document.getElementById("scissorsimg").style.display = "block";
