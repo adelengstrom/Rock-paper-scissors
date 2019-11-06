@@ -4,14 +4,18 @@ var Gamehistory=[]
 
 function hidestone() {
     document.getElementById("stone").style.display = "none";
+    document.getElementById("stone-computer").style.display = "none";
 }
 
 function hidepaper() {
     document.getElementById("paperimg").style.display = "none";
+    document.getElementById("paperimg-computer").style.display = "none";
 }
 
 function hidescissors() {
     document.getElementById("scissorsimg").style.display = "none";
+    document.getElementById("scissorsimg-computer").style.display = "none";
+
 }
 function hideall () {
     hidestone()
@@ -28,6 +32,7 @@ function rock() {
         Gamehistory.push('Tie')
     } else if (computerinput == 1) {
         var para = document.getElementById('winner');
+        document.getElementById("paperimg-computer").style.display = "block";
         para.innerText = 'You Win!';
         Gamehistory.push('Player wins') 
     } else {

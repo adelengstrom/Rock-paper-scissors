@@ -9,9 +9,14 @@
 <body onload="hideall()">
  <div class="wrapper"> 
     <h1>Rock Paper Scissors</h1>
-    <img id="stone" src="Pictures/stenbild" alt="Simply Easy Learning" >
-    <img id="paperimg" src="Pictures/paperpic" alt="Simply Easy Learning" > 
-    <img id="scissorsimg" src="Pictures/scissorpic" alt="Simply Easy Learning" > 
+    <div class="image-wrapper">
+        <img id="stone" src="Pictures/stenbild" alt="Simply Easy Learning" >
+        <img id="stone-computer" src="Pictures/stenbild" alt="Simply Easy Learning" >
+        <img id="paperimg" src="Pictures/paperpic" alt="Simply Easy Learning" > 
+        <img id="paperimg-computer" src="Pictures/paperpic" alt="Simply Easy Learning" > 
+        <img id="scissorsimg" src="Pictures/scissorpic" alt="Simply Easy Learning" >
+        <img id="scissorsimg-computer" src="Pictures/scissorpic" alt="Simply Easy Learning" >
+    </div> 
     <br><button onclick="rock()" type="button" id="rock" class="buttonrock">Rock</button> 
     <button onclick="paper()" type="button" id="paper" class="buttonpaper">Paper</button> 
     <button onclick="scissors()" type="button" id="scissors" class="buttonscissors">Scissors</button> 
