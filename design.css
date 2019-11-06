@@ -72,8 +72,9 @@ h1 {
   }
 
   body{
-    position: fixed;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  
+  }
+  .wrapper  {
+    width: 340px;
+    margin:0 auto;
   }
