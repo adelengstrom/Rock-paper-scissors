@@ -58,7 +58,7 @@ function paper() {
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
-    document.getElementById("Game_history").innerHTML=Gamehistory.join('\n')
+    document.getElementById("Game_history").innerHTML=Gamehistory.join('<br />')
 }
 function scissors() {
     document.getElementById("scissorsimg").style.display = "block";
