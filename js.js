@@ -39,7 +39,9 @@ function rock() {
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
     document.getElementById("stone").style.display = "block";
+    document.getElementById("Game_history").innerHTML=Gamehistory.join('<br />')
 }
+
 
 function paper() {
     document.getElementById("paperimg").style.display = "block";
@@ -82,7 +84,7 @@ function scissors() {
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
-    
+    document.getElementById("Game_history").innerHTML=Gamehistory.join('<br />')
 }
 function playagain() {
     var para = document.getElementById('winner');
