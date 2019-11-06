@@ -18,7 +18,7 @@ function hideall () {
 }
 
 function rock() {
-    document.getElementById("stone").style.display = "block";
+   
     var computerinput = (Math.floor(Math.random()* 3))
     if (computerinput == 0) {
         var para = document.getElementById('winner');
@@ -33,6 +33,7 @@ function rock() {
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
+    document.getElementById("stone").style.display = "block";
 }
 
 function paper() {
@@ -51,6 +52,7 @@ function paper() {
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
+    
 }
 function scissors() {
     document.getElementById("scissorsimg").style.display = "block";
@@ -68,6 +70,7 @@ function scissors() {
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
+    
 }
 function playagain() {
     var para = document.getElementById('winner');
