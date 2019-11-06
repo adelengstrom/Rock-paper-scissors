@@ -5,11 +5,11 @@ function hidestone() {
 }
 
 function hidepaper() {
-    document.getElementById("paper").style.display = "none";
+    document.getElementById("paperimg").style.display = "none";
 }
 
 function hidescissors() {
-    document.getElementById("scissors").style.display = "none";
+    document.getElementById("scissorsimg").style.display = "none";
 }
 function hideall () {
     hidestone()
@@ -36,7 +36,7 @@ function rock() {
 }
 
 function paper() {
-    document.getElementById("paper").style.display = "block";
+    document.getElementById("paperimg").style.display = "block";
     var computerinput = (Math.floor(Math.random()* 3))
     if (computerinput == 1) {
         var para = document.getElementById('winner');
@@ -53,7 +53,7 @@ function paper() {
     document.getElementById("scissors").disabled = true;
 }
 function scissors() {
-    document.getElementById("scissors").style.display = "block";
+    document.getElementById("scissorsimg").style.display = "block";
     var computerinput = (Math.floor(Math.random()* 3))
     if (computerinput == 2) {
         var para = document.getElementById('winner');
