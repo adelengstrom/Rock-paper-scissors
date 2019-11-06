@@ -25,12 +25,15 @@ function rock() {
     if (computerinput == 0) {
         var para = document.getElementById('winner');
         para.innerText = 'Tie';
+        Gamehistory.push('Tie')
     } else if (computerinput == 1) {
         var para = document.getElementById('winner');
         para.innerText = 'You Win!';
+        Gamehistory.push('Player wins') 
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You lose!';
+        Gamehistory.push('Compoter wins')
     }
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
@@ -45,11 +48,11 @@ function paper() {
         var para = document.getElementById('winner');
         para.innerText = 'Tie';
         Gamehistory.push('Tie')
+
     } else if (computerinput ==0) {
         var para = document.getElementById('winner');
         para.innerText = 'You Win!';
         Gamehistory.push('Player wins') 
-       
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You Lose!';
@@ -66,12 +69,15 @@ function scissors() {
     if (computerinput == 2) {
         var para = document.getElementById('winner');
         para.innerText = 'Tie'; 
+        Gamehistory.push('Tie')
     } else if (computerinput == 1) {
         var para = document.getElementById('winner');
         para.innerText = 'You Win!';
+        Gamehistory.push('Player wins') 
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You Lose!';
+        Gamehistory.push('Compoter wins')
     }
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
