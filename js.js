@@ -53,7 +53,7 @@ function paper() {
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You Lose!';
-        Gamehistory.push('Compoter wins')
+        Gamehistory.push('Computer wins')
     }
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
