@@ -35,15 +35,17 @@ function rock() {
         var para = document.getElementById('winner');
         para.innerText = 'Tie';
         Gamehistory.push('Tie')
+        document.getElementById("stone-computer").style.display = "block";
     } else if (computerinput == 1) {
         var para = document.getElementById('winner');
-        document.getElementById("paperimg-computer").style.display = "block";
+        document.getElementById("scissorsimg-computer").style.display = "block";
         para.innerText = 'You Win!';
         Gamehistory.push('Player wins') 
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You lose!';
         Gamehistory.push('Compoter wins')
+        document.getElementById("paperimg-computer").style.display = "block";
     }
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
@@ -61,15 +63,17 @@ function paper() {
         var para = document.getElementById('winner');
         para.innerText = 'Tie';
         Gamehistory.push('Tie')
-
+        document.getElementById("paperimg-computer").style.display = "block";
     } else if (computerinput ==0) {
         var para = document.getElementById('winner');
         para.innerText = 'You Win!';
         Gamehistory.push('Player wins') 
+        document.getElementById("stone-computer").style.display = "block";
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You Lose!';
         Gamehistory.push('Computer wins')
+        document.getElementById("scissorsimg-computer").style.display = "block";
     }
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
@@ -84,15 +88,19 @@ function scissors() {
         var para = document.getElementById('winner');
         para.innerText = 'Tie'; 
         Gamehistory.push('Tie')
+        document.getElementById("scissorsimg-computer").style.display = "block";
     } else if (computerinput == 1) {
         var para = document.getElementById('winner');
         para.innerText = 'You Win!';
-        Gamehistory.push('Player wins') 
+        Gamehistory.push('Player wins')
+        document.getElementById("paperimg-computer").style.display = "block"; 
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You Lose!';
         Gamehistory.push('Computer wins')
+        document.getElementById("stone-computer").style.display = "block";
     }
+
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
