@@ -17,10 +17,15 @@ function hidescissors() {
     document.getElementById("scissorsimg-computer").style.display = "none";
 
 }
+function hideversus() {
+    document.getElementById("versuspic").style.display = "none";
+
+}
 function hideall () {
     hidestone()
     hidepaper()
-    hidescissors()  
+    hidescissors()
+    hideversus()  
 }
 
 function rock() {
@@ -45,6 +50,7 @@ function rock() {
     document.getElementById("scissors").disabled = true;
     document.getElementById("stone").style.display = "block";
     document.getElementById("Game_history").innerHTML=Gamehistory.join('<br />')
+    document.getElementById("versuspic").style.display = "inline"
 }
 
 
@@ -69,6 +75,7 @@ function paper() {
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
     document.getElementById("Game_history").innerHTML=Gamehistory.join('<br />')
+    document.getElementById("versuspic").style.display = "inline"
 }
 function scissors() {
     document.getElementById("scissorsimg").style.display = "block";
@@ -84,12 +91,13 @@ function scissors() {
     } else {
         var para = document.getElementById('winner');
         para.innerText = 'You Lose!';
-        Gamehistory.push('Compoter wins')
+        Gamehistory.push('Computer wins')
     }
     document.getElementById("rock").disabled = true;
     document.getElementById("paper").disabled = true;
     document.getElementById("scissors").disabled = true;
     document.getElementById("Game_history").innerHTML=Gamehistory.join('<br />')
+    document.getElementById("versuspic").style.display = "inline"
 }
 function playagain() {
     var para = document.getElementById('winner');

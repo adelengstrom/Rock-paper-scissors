@@ -82,3 +82,9 @@ h1 {
    text-align: center;
    
   }
+  .image-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
