@@ -29,6 +29,7 @@ function hideall () {
   hidepaper()
   hidescissors()
   hideversus()
+  document.getElementById("audio").play()
 }
 
 function rock () {
