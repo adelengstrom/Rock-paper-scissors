@@ -115,3 +115,11 @@ function playagain () {
   document.getElementById('scissors').disabled = false
   hideall()
 }
+function ROCK () {
+  document.getElementById('stone').src = 'Pictures/cock.png'
+  document.getElementById('stone-computer').src = 'Pictures/cock.png'
+}
+function ROCKOFF () {
+  document.getElementById('stone').src = 'Pictures/stenbild.png'
+  document.getElementById('stone-computer').src = 'Pictures/stenbild.png'
+}
