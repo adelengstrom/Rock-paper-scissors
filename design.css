@@ -84,7 +84,7 @@ h1 {
    text-align: center;
    color:whitesmoke;
    height: 200px;
-   overflow-y: scroll;
+   overflow-y: auto;
    width: 100px;
    margin: 0 auto;
    
