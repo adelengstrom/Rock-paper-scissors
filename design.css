@@ -82,6 +82,11 @@ h1 {
   }
   #Game_history {
    text-align: center;
+   color:whitesmoke;
+   height: 200px;
+   overflow-y: scroll;
+   width: 100px;
+   margin: 0 auto;
    
   }
   .image-wrapper {
@@ -95,4 +100,16 @@ h1 {
     background-image: url(Pictures/iceicebaby.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+  #stone-computer {
+    height: 100px;
+  }
+  #stone {
+    height: 100px;
+  }
+  #scissorsimg {
+    height: 100px;
+  }
+  #scissorsimg-computer {
+    height: 100px;
   }
