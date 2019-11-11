@@ -65,7 +65,7 @@ h1 {
   margin-left: 20px;
     font-size: 30px;
     border-radius: 50%;
-    
+    text-align: center;
   }
   .buttonplayagain:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
