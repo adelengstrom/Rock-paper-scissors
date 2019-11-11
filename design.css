@@ -61,7 +61,7 @@
 }
 
 h1 {
-  color: rgb(23, 14, 151);
+  color: rgb(255, 255, 255);
   margin-left: 20px;
     font-size: 30px;
     border-radius: 50%;
@@ -87,4 +87,12 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 85px;
+    
+  }
+  body {
+    background-image: url(Pictures/iceicebaby.jpg);
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
   }
