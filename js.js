@@ -1,9 +1,11 @@
+/* eslint-disable no-undef */
 /* eslint-disable eqeqeq */
 /* eslint-disable no-redeclare */
 /* eslint-disable no-unused-vars */
 // var userinput = null;
 
 var Gamehistory = []
+var player = prompt('whats your name')
 
 function hidestone () {
   document.getElementById('stone').style.display = 'none'
@@ -40,7 +42,7 @@ function rock () {
     var para = document.getElementById('winner')
     document.getElementById('scissorsimg-computer').style.display = 'block'
     para.innerText = 'You Win!'
-    Gamehistory.push('Player wins')
+    Gamehistory.push(player + ' wins')
   } else {
     var para = document.getElementById('winner')
     para.innerText = 'You lose!'
@@ -67,7 +69,7 @@ function paper () {
   } else if (computerinput == 0) {
     var para = document.getElementById('winner')
     para.innerText = 'You Win!'
-    Gamehistory.push('Player wins')
+    Gamehistory.push(player + ' wins')
     document.getElementById('stone-computer').style.display = 'block'
   } else {
     var para = document.getElementById('winner')
@@ -92,7 +94,7 @@ function scissors () {
   } else if (computerinput == 1) {
     var para = document.getElementById('winner')
     para.innerText = 'You Win!'
-    Gamehistory.push('Player wins')
+    Gamehistory.push(player + ' wins')
     document.getElementById('paperimg-computer').style.display = 'block'
   } else {
     var para = document.getElementById('winner')
