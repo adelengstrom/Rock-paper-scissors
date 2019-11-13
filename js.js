@@ -29,7 +29,11 @@ function hideall () {
   hidepaper()
   hidescissors()
   hideversus()
-  document.getElementById("audio").play()
+}
+function sound(id) {
+  document.getElementById(id).pause()
+  document.getElementById(id).currentTime = 0
+  document.getElementById(id).play()
 }
 
 function rock () {
@@ -38,16 +42,19 @@ function rock () {
     var para = document.getElementById('winner')
     para.innerText = 'Tie'
     Gamehistory.push('Tie')
+    sound('tie')
     document.getElementById('stone-computer').style.display = 'block'
   } else if (computerinput == 1) {
     var para = document.getElementById('winner')
     document.getElementById('scissorsimg-computer').style.display = 'block'
     para.innerText = 'You Win!'
+    sound('win')
     Gamehistory.push(player + ' wins')
   } else {
     var para = document.getElementById('winner')
     para.innerText = 'You lose!'
     Gamehistory.push('Computer wins')
+    sound('lose')
     document.getElementById('paperimg-computer').style.display = 'block'
   }
   document.getElementById('rock').disabled = true
@@ -66,16 +73,19 @@ function paper () {
     var para = document.getElementById('winner')
     para.innerText = 'Tie'
     Gamehistory.push('Tie')
+    sound('tie')
     document.getElementById('paperimg-computer').style.display = 'block'
   } else if (computerinput == 0) {
     var para = document.getElementById('winner')
     para.innerText = 'You Win!'
     Gamehistory.push(player + ' wins')
+    sound('win')
     document.getElementById('stone-computer').style.display = 'block'
   } else {
     var para = document.getElementById('winner')
     para.innerText = 'You Lose!'
     Gamehistory.push('Computer wins')
+    sound('lose')
     document.getElementById('scissorsimg-computer').style.display = 'block'
   }
   document.getElementById('rock').disabled = true
@@ -91,16 +101,19 @@ function scissors () {
     var para = document.getElementById('winner')
     para.innerText = 'Tie'
     Gamehistory.push('Tie')
+    sound('tie')
     document.getElementById('scissorsimg-computer').style.display = 'block'
   } else if (computerinput == 1) {
     var para = document.getElementById('winner')
     para.innerText = 'You Win!'
     Gamehistory.push(player + ' wins')
+    sound('win')
     document.getElementById('paperimg-computer').style.display = 'block'
   } else {
     var para = document.getElementById('winner')
     para.innerText = 'You Lose!'
     Gamehistory.push('Computer wins')
+    sound('lose')
     document.getElementById('stone-computer').style.display = 'block'
   }
 
