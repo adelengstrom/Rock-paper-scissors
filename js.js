@@ -6,13 +6,20 @@
 
 var Gamehistory = []
 var player = prompt('whats your name')
+var elem = document.createElement('div')
+elem.innerHTML = player
+player = elem.innerText
 
+while (player.length < 1) {
+  player = prompt('whats your name(text only please)')
+  elem.innerHTML = player
+  player = elem.innerText
+}
+elem.remove()
 function hidestone () {
   document.getElementById('stone').style.display = 'none'
   document.getElementById('stone-computer').style.display = 'none'
 }
-
-
 function hidepaper () {
   document.getElementById('paperimg').style.display = 'none'
   document.getElementById('paperimg-computer').style.display = 'none'
