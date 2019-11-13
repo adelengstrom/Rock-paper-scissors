@@ -12,6 +12,7 @@ function hidestone () {
   document.getElementById('stone-computer').style.display = 'none'
 }
 
+
 function hidepaper () {
   document.getElementById('paperimg').style.display = 'none'
   document.getElementById('paperimg-computer').style.display = 'none'
@@ -35,7 +36,15 @@ function sound(id) {
   document.getElementById(id).currentTime = 0
   document.getElementById(id).play()
 }
-
+function rockbuttonhover () {
+  sound('rockbuttonhover')
+}
+function scissorbuttonhover () {
+  sound('scissorbuttonhover')
+}
+function paperbuttonhover () {
+  sound('paperbuttonhover')
+}
 function rock () {
   var computerinput = (Math.floor(Math.random() * 3))
   if (computerinput == 0) {
